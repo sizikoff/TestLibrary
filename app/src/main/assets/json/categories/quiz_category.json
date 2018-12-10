@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "question_category": "1",
+      "category_name": "Тест 1"
+    },
+    {
+      "question_category": "2",
+      "category_name": "Тест 2"
+    },
+    {
+      "question_category": "3",
+      "category_name": "Тест 3"
+    },
+    {
+      "question_category": "4",
+      "category_name": "Тест 4"
+    }
+  ]
+}
