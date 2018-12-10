@@ -15,6 +15,12 @@
     {
       "question_category": "4",
       "category_name": "Тест 4"
+    },{
+      "question_category": "5",
+      "category_name": "Тест 5"
+    },{
+      "question_category": "6",
+      "category_name": "Тест 6"
     }
   ]
 }

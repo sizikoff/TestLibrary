@@ -63,6 +63,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
             case 3:
                 holder.lytContainer.setBackground(ContextCompat.getDrawable(mContext, R.drawable.liter));
                 break;
+            case 4:
+                holder.lytContainer.setBackground(ContextCompat.getDrawable(mContext, R.drawable.instr));
+                break;
+            case 5:
+                holder.lytContainer.setBackground(ContextCompat.getDrawable(mContext, R.drawable.grug));
+                break;
     }
 
     }

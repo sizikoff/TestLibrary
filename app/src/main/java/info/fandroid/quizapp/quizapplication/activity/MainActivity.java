@@ -49,6 +49,7 @@ import info.fandroid.quizapp.quizapplication.data.sqlite.NotificationDbControlle
 import info.fandroid.quizapp.quizapplication.listeners.ListItemClickListener;
 import info.fandroid.quizapp.quizapplication.models.notification.NotificationModel;
 import info.fandroid.quizapp.quizapplication.models.quiz.CategoryModel;
+import info.fandroid.quizapp.quizapplication.picturetest.PictureActivity;
 import info.fandroid.quizapp.quizapplication.utilities.ActivityUtilities;
 
 import info.fandroid.quizapp.quizapplication.utilities.AppUtilities;
@@ -235,11 +236,20 @@ public class MainActivity extends BaseActivity implements DialogUtilities.OnComp
         adapter.setItemClickListener(new ListItemClickListener() {
             @Override
             public void onItemClick(int position, View view) {
-
-                //show snackbar and return if not purchased
-
                 CategoryModel model = categoryList.get(position);
-                ActivityUtilities.getInstance().invokeCommonQuizActivity(activity, QuizPromptActivity.class, model.getCategoryId(), true);
+                if (position == 0 ) {
+                    ActivityUtilities.getInstance().invokeCommonQuizActivity(activity, QuizActivity.class, model.getCategoryId(), true);
+                }else if (position == 1){
+                    ActivityUtilities.getInstance().invokeCommonQuizActivity(activity, QuizActivity.class, model.getCategoryId(), true);
+                }else if (position == 2){
+                    ActivityUtilities.getInstance().invokeCommonQuizActivity(activity, QuizActivity.class, model.getCategoryId(), true);
+                }else if (position == 3){
+                    ActivityUtilities.getInstance().invokeCommonQuizActivity(activity, QuizActivity.class, model.getCategoryId(), true);
+                }else if (position == 4){
+                    ActivityUtilities.getInstance().invokeCommonQuizActivity(activity, PictureActivity.class, model.getCategoryId(), true);
+                }else if (position == 5){
+
+                }
             }
         });
     }
